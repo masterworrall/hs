@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+
+# Virtual envs
+venv/
+.env
+
+
+# Byte-compiled / cache
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
