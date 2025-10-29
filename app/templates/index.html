@@ -49,8 +49,8 @@
                         </button>
                     </div>
                     <datalist id="registries">
-                        <option value="XXXXXXXX"></option>
-                        <option value="YYYYYYYYY"></option>
+                        <option value="MAN72966"></option>
+                        <option value="YY19275"></option>
                     </datalist>
                 </div>
             </div>
@@ -196,7 +196,7 @@
         // current-registry-title variable (global)
         let currentRegistryTitle = '';
 
-        const allowed = ['XXXXXXXX', 'YYYYYYYYY']; // values to match
+        const allowed = ['MAN72966', 'YY19275']; // values to match
         const input = document.getElementById('registry-search');
         const searchBtn = document.getElementById('search-btn');
         const detailsLink = document.getElementById('details-link');
@@ -222,7 +222,7 @@
                     currentRegistryTitle = v;
                     window.location.href = '/details?title=' + encodeURIComponent(currentRegistryTitle);
                 } else {
-                    alert('Please select a registry from the list (XXXXXXXX or YYYYYYYYY).');
+                    alert('Please select a registry from the list (MAN72966 or YY19275).');
                 }
             }
         });
@@ -233,7 +233,7 @@
             if (currentRegistryTitle) {
                 window.location.href = '/details?title=' + encodeURIComponent(currentRegistryTitle);
             } else {
-                alert('Select a registry from the search box before opening details.');
+                alert('Select a registry (MAN72966 or YY19275) from the search box before opening details.');
             }
         });
 
