@@ -6,6 +6,8 @@
     <title>{{ title }}</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (for tick / untick icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         .footer {
             background-color: #f8f9fa;
@@ -60,12 +62,53 @@
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title">Seller</h2>
-                        <p>Signed (Undated) TR1</p>
-                        <p>Redemption statement</p>
-                        <!-- changed to a link; JS will redirect using selected registry -->
-                        <p><a href="/details" id="details-link">Details of requirements for any restrictions</a></p>
-                        <p>Change of name evidence (if relevant)</p>
-                        <p>&nbsp;</p>
+
+                        <ul class="list-unstyled mb-0">
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Signed (Undated) TR1</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Redemption statement</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0"><a href="/details" id="details-link">Details of requirements for any restrictions</a></p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Change of name evidence (if relevant)</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -74,11 +117,64 @@
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title">Buyer</h2>
-                        <p>Signed Transfer</p>
-                        <p>Signed Mortgage Deed</p>
-                        <p>Compliance Certificate</p>
-                        <p>OS1 Lodged</p>
-                        <p>Additional AP1s - Daylist search prior to application</p>
+
+                        <ul class="list-unstyled mb-0">
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Signed Transfer</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Signed Mortgage Deed</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Compliance Certificate</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">OS1 Lodged</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+
+                            <li class="row align-items-center mb-2">
+                                <div class="col">
+                                    <p class="mb-0">Additional AP1s - Daylist search prior to application</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-secondary toggle-check" aria-pressed="false" title="Toggle">
+                                        <i class="bi bi-square" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -139,6 +235,28 @@
             } else {
                 alert('Select a registry from the search box before opening details.');
             }
+        });
+
+        // Toggle handlers for the tick buttons
+        document.querySelectorAll('.toggle-check').forEach(btn => {
+            btn.addEventListener('click', (ev) => {
+                const b = ev.currentTarget;
+                const icon = b.querySelector('i');
+                const pressed = b.getAttribute('aria-pressed') === 'true';
+                if (pressed) {
+                    // switch to unchecked
+                    b.setAttribute('aria-pressed', 'false');
+                    b.classList.remove('btn-success');
+                    b.classList.add('btn-outline-secondary');
+                    icon.className = 'bi bi-square';
+                } else {
+                    // switch to checked
+                    b.setAttribute('aria-pressed', 'true');
+                    b.classList.remove('btn-outline-secondary');
+                    b.classList.add('btn-success');
+                    icon.className = 'bi bi-check-square-fill';
+                }
+            });
         });
     </script>
 </body>
