@@ -2,25 +2,40 @@
     {
         "Title_Register_Number": "MAN72966",
         "Restrictions": [
-            { "text": "Management company approval required" },
-            { "text": "Consent required for alterations" },
-            { "text": "No subletting without permission" }
+            {
+                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge is to be registered without a certificate signed on behalf of Riverside Lodge Management Limited of 323 Wilmslow Road, Fallowfield, Manchester M14 6NW by its director, secretary or solicitor that the provisions of Part III of the Fourth Schedule of the registered lease have been complied with."
+            },
+            {
+                "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register."
+            },
+            {
+                "text": "No disposition of the registered estate, other than a disposition by the proprietor of any registered charge registered before the entry of this restriction, is to be registered without a certificate signed by the applicant for registration or their conveyancer that written notice of the disposition was given to Madou Diene at 16 Packsaddle Park, Prestbury, Macclesfield SK10 4PU."
+            }
         ]
     },
     {
         "Title_Register_Number": "YY19275",
         "Restrictions": [
-            { "text": "Restrictions on use of property" },
-            { "text": "Rights of way for neighbouring properties" },
-            { "text": "Requirement to maintain shared driveway" }
+            {
+                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate, or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a certificate signed by the proprietor for the time being of the estate registered under title number WYK778659 or their conveyancer that the provisions of paragraph 3.18 of the registered lease have been complied with or that they do not apply to the disposition."
+            },
+            {
+                "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register."
+            },
+            {
+                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by Papiss Demba Cisse of c/o Savage Silk Limited, The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF or by their conveyancer Savage Silk Limited of The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF."
+            }
         ]
     },
     {
         "Title_Register_Number": "DU282856",
         "Restrictions": [
-            { "text": "Mortgagee consent required before disposal" },
-            { "text": "Environmental covenant applies" },
-            { "text": "Restriction on building extensions" }
+            {
+                "text": "No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court."
+            },
+            {
+                "text": "No disposition by the proprietors of the registered estate is to be registered unless one or more of them makes a statutory declaration or statement of truth, or their conveyancer gives a certificate, that the disposition is in accordance with the Trust Deed dated 28 July 2020 made between Sheila Mary Radburn and Cara Louise Norton or some variation thereof referred to in the declaration, statement or certificate."
+            }
         ]
     }
 ]
