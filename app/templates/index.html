@@ -51,6 +51,7 @@
                     <datalist id="registries">
                         <option value="MAN72966"></option>
                         <option value="YY19275"></option>
+                        <option value="DU282856"></option>
                     </datalist>
                 </div>
             </div>
@@ -277,7 +278,8 @@
         // current-registry-title variable (global)
         let currentRegistryTitle = '';
 
-        const allowed = ['MAN72966', 'YY19275']; // values to match
+        // Update allowed values to include DU282856
+        const allowed = ['MAN72966', 'YY19275', 'DU282856']; // values to match
         const input = document.getElementById('registry-search');
         const searchBtn = document.getElementById('search-btn');
         const detailsLink = document.getElementById('details-link');
@@ -303,7 +305,7 @@
                     currentRegistryTitle = v;
                     window.location.href = '/details?title=' + encodeURIComponent(currentRegistryTitle);
                 } else {
-                    alert('Please select a registry from the list (MAN72966 or YY19275).');
+                    alert('Please select a registry from the list (MAN72966, YY19275, or DU282856).');
                 }
             }
         });
@@ -314,7 +316,7 @@
             if (currentRegistryTitle) {
                 window.location.href = '/details?title=' + encodeURIComponent(currentRegistryTitle);
             } else {
-                alert('Select a registry (MAN72966 or YY19275) from the search box before opening details.');
+                alert('Select a registry (MAN72966, YY19275, or DU282856) from the search box before opening details.');
             }
         });
 
