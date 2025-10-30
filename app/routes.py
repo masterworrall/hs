@@ -23,11 +23,15 @@ def details():
         # find matching registry
         match = next((r for r in registries if r.get("Title_Register_Number") == title), None)
         if match:
-            restrictions = match.get("Restrictions", [])
+            # Extract only the text and actions we need
+            restrictions = [{
+                "text": r.get("text", ""),
+                "actions": r.get("actions", [])  # Now we can use the actions from JSON if needed
+            } for r in match.get("Restrictions", [])]
     except FileNotFoundError:
-        # file missing -> leave restrictions empty
         restrictions = []
-    except Exception:
+    except Exception as e:
+        print(f"Error processing restrictions: {e}")  # Added logging
         restrictions = []
 
     return render_template("details.html", title=title, restrictions=restrictions)

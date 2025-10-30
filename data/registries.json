@@ -1,41 +1,121 @@
 [
-    {
-        "Title_Register_Number": "MAN72966",
-        "Restrictions": [
-            {
-                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge is to be registered without a certificate signed on behalf of Riverside Lodge Management Limited of 323 Wilmslow Road, Fallowfield, Manchester M14 6NW by its director, secretary or solicitor that the provisions of Part III of the Fourth Schedule of the registered lease have been complied with."
-            },
-            {
-                "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register."
-            },
-            {
-                "text": "No disposition of the registered estate, other than a disposition by the proprietor of any registered charge registered before the entry of this restriction, is to be registered without a certificate signed by the applicant for registration or their conveyancer that written notice of the disposition was given to Madou Diene at 16 Packsaddle Park, Prestbury, Macclesfield SK10 4PU."
-            }
+  {
+    "Title_Register_Number": "MAN72966",
+    "Restrictions": [
+      {
+        "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge is to be registered without a certificate signed on behalf of Riverside Lodge Management Limited of 323 Wilmslow Road, Fallowfield, Manchester M14 6NW by its director, secretary or solicitor that the provisions of Part III of the Fourth Schedule of the registered lease have been complied with.",
+        "actions": [
+          {
+            "description": "Obtain a certificate confirming compliance with the specified lease provisions from the named party (e.g., management company, landlord) or their conveyancer.",
+            "evidence": "Provide the certificate using Form RXC signed by an authorised signatory (director/secretary/solicitor).",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
         ]
-    },
-    {
-        "Title_Register_Number": "YY19275",
-        "Restrictions": [
-            {
-                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate, or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a certificate signed by the proprietor for the time being of the estate registered under title number WYK778659 or their conveyancer that the provisions of paragraph 3.18 of the registered lease have been complied with or that they do not apply to the disposition."
-            },
-            {
-                "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register."
-            },
-            {
-                "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by Papiss Demba Cisse of c/o Savage Silk Limited, The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF or by their conveyancer Savage Silk Limited of The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF."
-            }
+      },
+      {
+        "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register.",
+        "actions": [
+          {
+            "description": "Obtain written consent from the party named in the restriction (e.g., charge proprietor or specified individual/firm) allowing the disposition.",
+            "evidence": "Complete Form RXC to provide the consent as part of the application; retain the original consent on file.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
         ]
-    },
-    {
-        "Title_Register_Number": "DU282856",
-        "Restrictions": [
-            {
-                "text": "No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court."
-            },
-            {
-                "text": "No disposition by the proprietors of the registered estate is to be registered unless one or more of them makes a statutory declaration or statement of truth, or their conveyancer gives a certificate, that the disposition is in accordance with the Trust Deed dated 28 July 2020 made between Sheila Mary Radburn and Cara Louise Norton or some variation thereof referred to in the declaration, statement or certificate."
-            }
+      },
+      {
+        "text": "No disposition of the registered estate, other than a disposition by the proprietor of any registered charge registered before the entry of this restriction, is to be registered without a certificate signed by the applicant for registration or their conveyancer that written notice of the disposition was given to Madou Diene at 16 Packsaddle Park, Prestbury, Macclesfield SK10 4PU.",
+        "actions": [
+          {
+            "description": "Give written notice of the disposition to the person/address stated in the restriction and certify that notice was given.",
+            "evidence": "Provide a certificate using Form RXC signed by the applicant or their conveyancer confirming service of the notice.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
         ]
-    }
+      }
+    ]
+  },
+  {
+    "Title_Register_Number": "YY19275",
+    "Restrictions": [
+      {
+        "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate, or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a certificate signed by the proprietor for the time being of the estate registered under title number WYK778659 or their conveyancer that the provisions of paragraph 3.18 of the registered lease have been complied with or that they do not apply to the disposition.",
+        "actions": [
+          {
+            "description": "Obtain a certificate confirming compliance with the specified lease provisions from the named party (e.g., management company, landlord) or their conveyancer.",
+            "evidence": "Provide the certificate using Form RXC signed by an authorised signatory (director/secretary/solicitor).",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "No disposition of the registered estate by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by the proprietor for the time being of the Charge dated 24 July 2018 in favour of Lynx Services Limited referred to in the Charges Register.",
+        "actions": [
+          {
+            "description": "Obtain written consent from the party named in the restriction (e.g., charge proprietor or specified individual/firm) allowing the disposition.",
+            "evidence": "Complete Form RXC to provide the consent as part of the application; retain the original consent on file.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge, not being a charge registered before the entry of this restriction, is to be registered without a written consent signed by Papiss Demba Cisse of c/o Savage Silk Limited, The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF or by their conveyancer Savage Silk Limited of The Core, Bath Lane, Newcastle Helix, Newcastle Upon Tyne NE4 5TF.",
+        "actions": [
+          {
+            "description": "Obtain written consent from the party named in the restriction (e.g., charge proprietor or specified individual/firm) allowing the disposition.",
+            "evidence": "Complete Form RXC to provide the consent as part of the application; retain the original consent on file.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register",
+              "https://www.gov.uk/government/publications/restriction-consent-or-certificate-rxc"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Title_Register_Number": "DU282856",
+    "Restrictions": [
+      {
+        "text": "No disposition by a sole proprietor of the registered estate (except a trust corporation) under which capital money arises is to be registered unless authorised by an order of the court.",
+        "actions": [
+          {
+            "description": "Ensure overreaching: have at least two trustees (or a trust corporation) receive the purchase money or, if not possible, obtain a court order authorising the disposition.",
+            "evidence": "If appointing a second trustee, lodge evidence of appointment with the application; otherwise lodge the court order.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/private-trusts-of-land/practice-guide-24-private-trusts-of-land",
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "No disposition by the proprietors of the registered estate is to be registered unless one or more of them makes a statutory declaration or statement of truth, or their conveyancer gives a certificate, that the disposition is in accordance with the Trust Deed dated 28 July 2020 made between Sheila Mary Radburn and Cara Louise Norton or some variation thereof referred to in the declaration, statement or certificate.",
+        "actions": [
+          {
+            "description": "Confirm the disposition complies with the referenced trust deed (or any variation) by statutory declaration or statement of truth, or provide a conveyancer’s certificate to that effect.",
+            "evidence": "Prepare a statement of truth or statutory declaration identifying the trust deed and how the disposition complies; alternatively provide a conveyancer’s certificate.",
+            "hm_land_registry_links": [
+              "https://www.gov.uk/government/publications/statements-of-truth/practice-guide-73-statements-of-truth",
+              "https://www.gov.uk/government/publications/notices-restrictions-and-the-protection-of-third-party-interests-in-the-register/practice-guide-19-notices-restrictions-and-the-protection-of-third-party-interests-in-the-register"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]

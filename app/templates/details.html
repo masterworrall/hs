@@ -38,32 +38,47 @@
           </div>
       </div>
 
-      <!-- Each restriction in its own panel, with a two-column table of actions underneath -->
+      <!-- Each restriction in its own panel -->
       <div class="row">
         <div class="col-12">
           {% if restrictions %}
             {% for r in restrictions %}
-              <div class="card mb-3">
+              <div class="card mb-4">
                 <div class="card-body">
                   <h5 class="card-title">Restriction</h5>
-                  <p class="card-text">{{ r.text | e }}</p>
+                  <p class="card-text mb-4">{{ r.text | e }}</p>
 
                   <div class="table-responsive">
-                    <table class="table table-sm">
+                    <table class="table">
                       <thead>
                         <tr>
-                          <th>Action</th>
-                          <th class="text-end" style="width:120px;">Tick</th>
+                          <th>Required Actions</th>
+                          <th class="text-end" style="width:120px;">Complete</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {# hard-coded actions for now #}
-                        {% set actions = ['Action 1', 'Action 2', 'Action 3'] %}
-                        {% for action_text in actions %}
+                        {% for action in r.actions %}
                         <tr>
-                          <td style="vertical-align: middle;">{{ action_text | e }}</td>
-                          <td class="text-end" style="vertical-align: middle;">
-                            <button type="button" class="btn btn-outline-secondary btn-sm toggle-check" aria-pressed="false" title="Toggle">
+                          <td>
+                            <div class="mb-2">
+                              <strong>Action:</strong><br>
+                              {{ action.description | e }}
+                            </div>
+                            <div class="mb-2">
+                              <strong>Required Evidence:</strong><br>
+                              {{ action.evidence | e }}
+                            </div>
+                            <div>
+                              <strong>HM Land Registry Guidance:</strong><br>
+                              <ul class="list-unstyled">
+                                {% for link in action.hm_land_registry_links %}
+                                <li><a href="{{ link }}" target="_blank" class="text-decoration-none">{{ link }}</a></li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          </td>
+                          <td class="text-end align-middle">
+                            <button type="button" class="btn btn-outline-secondary btn-sm toggle-check" aria-pressed="false" title="Toggle completion">
                               <i class="bi bi-square" aria-hidden="true"></i>
                             </button>
                           </td>
@@ -80,12 +95,11 @@
           {% endif %}
 
           <!-- Back button below all panels -->
-          <div class="row mt-2">
+          <div class="row mt-4">
             <div class="col-12 d-flex justify-content-center">
               <a class="btn btn-secondary" href="/" role="button">Back</a>
             </div>
           </div>
-
         </div>
       </div>
 
