@@ -1,0 +1,26 @@
+[
+    {
+        "Title_Register_Number": "MAN72966",
+        "Restrictions": [
+            { "text": "Management company approval required" },
+            { "text": "Consent required for alterations" },
+            { "text": "No subletting without permission" }
+        ]
+    },
+    {
+        "Title_Register_Number": "YY19275",
+        "Restrictions": [
+            { "text": "Restrictions on use of property" },
+            { "text": "Rights of way for neighbouring properties" },
+            { "text": "Requirement to maintain shared driveway" }
+        ]
+    },
+    {
+        "Title_Register_Number": "DU282856",
+        "Restrictions": [
+            { "text": "Mortgagee consent required before disposal" },
+            { "text": "Environmental covenant applies" },
+            { "text": "Restriction on building extensions" }
+        ]
+    }
+]
