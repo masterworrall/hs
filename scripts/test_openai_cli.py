@@ -9,7 +9,16 @@ if PROJECT_ROOT not in sys.path:
 from app.openai_client import send_prompt, load_system_prompt
 
 # Edit this prompt to test different inputs
-PROMPT = """No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge is to be registered without a certificate signed on behalf of Riverside Lodge Management Limited of 323 Wilmslow Road, Fallowfield, Manchester M14 6NW by its director, secretary or solicitor that the provisions of Part III of the Fourth Schedule of the registered lease have been complied with.."""
+PROMPT = """
+{
+  "Title_Register_Number": "MAN72966",
+  "Restrictions": [
+    {
+        "text": "No disposition of the registered estate (other than a charge) by the proprietor of the registered estate or by the proprietor of any registered charge is to be registered without a certificate signed on behalf of Riverside Lodge Management Limited of 323 Wilmslow Road, Fallowfield, Manchester M14 6NW by its director, secretary or solicitor that the provisions of Part III of the Fourth Schedule of the registered lease have been complied with.",
+    }
+  ]
+}
+"""
 
 def main():
     # Load and show system prompt
