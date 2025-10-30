@@ -14,31 +14,40 @@ _client = OpenAI(api_key=API_KEY)
 
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
-def send_prompt(prompt: str, model: str = DEFAULT_MODEL, **kwargs) -> str:
+def load_system_prompt() -> str:
+    """Load system prompt from data/system.prompt file"""
+    try:
+        prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "system.prompt"))
+        with open(prompt_path, "r", encoding="utf-8") as f:
+            return f.read().strip()
+    except Exception as e:
+        print(f"Warning: Could not load system prompt: {e}", file=sys.stderr)
+        return ""
+
+def send_prompt(prompt: str, system_prompt: str = None, model: str = DEFAULT_MODEL, **kwargs) -> str:
     """
-    Send a prompt to the Responses API and return text.
+    Send prompts to the OpenAI API with optional system prompt.
+    If system_prompt is None, loads from data/system.prompt
     """
     if not prompt:
         return ""
-    resp = _client.responses.create(model=model, input=prompt, **kwargs)
-    # Best-effort extraction of text
-    if getattr(resp, "output_text", None):
-        return resp.output_text
+        
+    if system_prompt is None:
+        system_prompt = load_system_prompt()
+
+    messages = []
+    if system_prompt:
+        messages.append({"role": "system", "content": system_prompt})
+    messages.append({"role": "user", "content": prompt})
+    
+    resp = _client.chat.completions.create(
+        model=model,
+        messages=messages,
+        **kwargs
+    )
+    
+    # Extract response text from chat completion
     try:
-        output = getattr(resp, "output", None) or resp.get("output", None)
-        if output:
-            parts = []
-            for item in output:
-                for c in item.get("content", []):
-                    if isinstance(c, dict):
-                        if "text" in c:
-                            parts.append(c["text"])
-                        elif "parts" in c:
-                            parts.extend(c["parts"])
-                    elif isinstance(c, str):
-                        parts.append(c)
-            if parts:
-                return "".join(parts)
+        return resp.choices[0].message.content
     except Exception:
-        pass
-    return str(resp)
+        return str(resp)
